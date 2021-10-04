@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+$default-font: 'Montserrat', sans-serif;
+
+$media_tablet: 768px;
+$media_tables_horizontal: 1024px;
+$media_phone: 600px;
+
+html {
+  font-family: $default-font;
+}

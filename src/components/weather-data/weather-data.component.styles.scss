@@ -1,0 +1,15 @@
+summary-component {
+  border-radius: 6px;
+  margin: 0 5px 0 5px;
+}
+
+.weather-data {
+  height: 100%;
+}
+
+.summaries {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}

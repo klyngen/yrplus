@@ -1,0 +1,45 @@
+@use '../../common.styles.scss' as common;
+
+.slots {
+  position: relative;
+}
+
+.slot-container {
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+
+  slot {
+    display: flex;
+  }
+}
+
+.slider {
+  font-family: common.$default_font;
+  color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+
+  > .slot-item {
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.1);
+    border-width: 1px;
+    border-radius: 5px;
+    margin: 0 5px 0 5px;
+  }
+}
+
+.slider.active {
+  border-color: rgba($color: #fff, $alpha: 0.2);
+}
+
+
+
+@media(min-width: common.$media_tablet) {
+  .slot-container {
+    justify-content: center;
+  }
+}
